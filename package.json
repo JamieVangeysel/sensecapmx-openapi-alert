@@ -1,0 +1,19 @@
+{
+  "name": "sensecapmx-openapi-alert",
+  "version": "1.0.0",
+  "description": "Alert based on connection status of SenseCAP device using OpenApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamieVangeysel/sensecapmx-openapi-alert.git"
+  },
+  "author": "Jamie Vangeysel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamieVangeysel/sensecapmx-openapi-alert/issues"
+  },
+  "homepage": "https://github.com/JamieVangeysel/sensecapmx-openapi-alert#readme"
+}
