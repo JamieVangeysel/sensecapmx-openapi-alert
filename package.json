@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JamieVangeysel/sensecapmx-openapi-alert/issues"
   },
-  "homepage": "https://github.com/JamieVangeysel/sensecapmx-openapi-alert#readme"
+  "homepage": "https://github.com/JamieVangeysel/sensecapmx-openapi-alert#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.3"
+  }
 }
