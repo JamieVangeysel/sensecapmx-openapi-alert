@@ -1,5 +1,5 @@
 const config = require('./config')
-const sensecap = require('./sensecap')
+import * as sensecap from './sensecap'
 
 const main = async () => {
   for (const device of config.devices) {

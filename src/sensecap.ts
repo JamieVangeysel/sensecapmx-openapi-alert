@@ -1,7 +1,7 @@
-const config = require('./config')
-const https = require('https')
+import config from './config'
+import https from 'https'
 
-exports.get = (sn): Promise<ISenseCAPDevice> => {
+export const get = (sn): Promise<ISenseCAPDevice> => {
   const url = `${config.sensecap.apiUrl}/api/openapi/device/view_device?sn=${sn}&api_key=${config.sensecap.apiKey}`
   console.log(url)
   return new Promise((resolve, reject) => {

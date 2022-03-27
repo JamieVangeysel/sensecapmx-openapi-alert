@@ -18,5 +18,8 @@
   "homepage": "https://github.com/JamieVangeysel/sensecapmx-openapi-alert#readme",
   "dependencies": {
     "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23"
   }
 }
