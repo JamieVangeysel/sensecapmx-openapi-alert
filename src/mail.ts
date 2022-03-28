@@ -2,7 +2,7 @@
 const nodemailer = require('nodemailer')
 const config = require('./config')
 
-exports.mail = (to, subject, body) => {
+export const mail = async (to: string, subject: string, body: string) => {
   let smtpConfig
 
   if (config.smtp) {
@@ -29,10 +29,10 @@ exports.mail = (to, subject, body) => {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    to: "bar@example.com, baz@example.com", // list of receivers
-    subject: "Hello ✔", // Subject line
+    to, // "bar@example.com, baz@example.com", // list of receivers
+    subject, // "Hello ✔", // Subject line
     text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    html: body // "<b>Hello world?</b>", // html body
   });
 
   console.log("Message sent: %s", info.messageId);
