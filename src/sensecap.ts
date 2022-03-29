@@ -1,18 +1,18 @@
 import { config } from './config'
-import https from 'https'
+import * as https from 'https'
 
 export const get = (sn: string): Promise<ISenseCAPDevice> => {
   const url = `${config.sensecap.apiUrl}/api/openapi/device/view_device?sn=${sn}&api_key=${config.sensecap.apiKey}`
-  console.log(url)
+  // console.log(url)
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
       console.log('statusCode:', res.statusCode)
-      console.log('headers:', res.headers)
+      // console.log('headers:', res.headers)
 
       let buf = ''
 
       res.on('data', (d) => {
-        process.stdout.write(d)
+        // process.stdout.write(d)
         buf += d
       })
 
